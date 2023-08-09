@@ -3,7 +3,11 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 ^+#!s::  ; This is the hotkey (Ctrl+Shift+Alt+Win+A in this case)
-IfWinExist, ahk_exe wezterm.exe
+IfWinExist, ahk_exe wezterm-gui.exe
+{
+    WinActivate
+}
+else IfWinExist, nvim
 {
     WinActivate
 }
