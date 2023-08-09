@@ -2,7 +2,7 @@
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
-^+#!s::  ; This is the hotkey (Ctrl+Shift+Alt+Win+A in this case)
+^+#!s::
 IfWinExist, ahk_exe wezterm-gui.exe
 {
     WinActivate
