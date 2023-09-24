@@ -5,7 +5,8 @@ SetWorkingDir %A_ScriptDir%
 ^+#!n::
 IfWinExist, ahk_exe notion.exe
 {
-    WinActivate
+    GroupAdd, NotionWindows, ahk_exe notion.exe
+    GroupActivate, NotionWindows
 }
 else
 {

@@ -5,7 +5,8 @@ SetWorkingDir %A_ScriptDir%
 ^+#!d::
 IfWinExist, ahk_exe discord.exe
 {
-    WinActivate
+    GroupAdd, DiscordWindows, ahk_exe discord.exe
+    GroupActivate, DiscordWindows
 }
 else
 {
