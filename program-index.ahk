@@ -80,6 +80,20 @@ else
 }
 return
 
+^+#!p::
+IfWinExist, ahk_exe spotify.exe
+{
+    GroupAdd, SpotifyWindows, ahk_exe spotify.exe
+    GroupActivate, SpotifyWindows
+}
+else
+{
+    Run, "C:\Users\Liam\AppData\Roaming\Spotify\Spotify.exe"
+}
+return
+
+
+
 ^+#!s::
 IfWinExist, ahk_exe wezterm-gui.exe
 {
